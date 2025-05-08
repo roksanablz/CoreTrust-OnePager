@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media print {
+  html, body {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+  .p-6, .p-5, .p-4 {
+    padding: 0.5rem !important;
+  }
+  .mb-8, .mb-4 {
+    margin-bottom: 0.5rem !important;
+  }
+  .text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl {
+    font-size: 1.2em !important;
+  }
+  .w-32, .h-32, .w-24, .h-24 {
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+  .shadow-md, .shadow-lg, .shadow-inner {
+    box-shadow: none !important;
+  }
+  .rounded-lg, .rounded-full {
+    border-radius: 0.5rem !important;
+  }
+  .min-h-\[350px\] {
+    min-height: 350px !important;
+  }
+  /* Prevent page breaks inside main content */
+  .flex, .flex-col, .flex-row {
+    page-break-inside: avoid !important;
+  }
+  .footer-flex-row {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    display: flex !important;
+    gap: 1rem !important;
+  }
+  .print-header-title {
+    font-size: 2.5em !important;
+  }
+  .logo-circle-bg {
+    border-radius: 50% !important;
+    aspect-ratio: 1 / 1 !important;
+    width: 8rem !important;
+    height: auto !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: white !important;
+  }
+  .logo-circle-bg img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    border-radius: 50% !important;
+    background: white !important;
+  }
+  .print-footer-padding {
+    padding-left: 1.2cm !important;
+    padding-right: 1.2cm !important;
+  }
+  .footer-logo-print-pad {
+    margin-left: 1.2cm !important;
+  }
+}
